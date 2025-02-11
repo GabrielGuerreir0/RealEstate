@@ -1,27 +1,86 @@
-# RealEstate
+# 📦 Projeto Real Estate
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+Este é um projeto desenvolvido com **Angular**, focado em [descreva brevemente o objetivo do projeto, por exemplo: "gestão de tarefas", "dashboard de análise", "aplicação de controle de estoque", etc.].
 
-## Development server
+## 🚀 Tecnologias Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular** (versão mais recente)
+- **Node.js** v20.14.0
+- **npm** v10.7.0
 
-## Code scaffolding
+## ⚙️ Requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js (>= 20.14.0)
+- npm (>= 10.7.0)
+- Angular CLI (instalar com `npm install -g @angular/cli`)
 
-## Build
+## 📥 Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone o repositório:
+   ```bash
+   git clone git@github.com:GabrielGuerreir0/RealEstate.git
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-## Running unit tests
+## 🚀 Como Executar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Inicie o servidor de desenvolvimento:
 
-## Running end-to-end tests
+```bash
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ou se achar melhor utilizar o Docker:
 
-## Further help
+```bash
+docker-compose -d --build estate-dev
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Acesse o aplicativo em [http://localhost:8200](http://localhost:8200).
+
+## 🗂️ Estrutura do Projeto
+
+```
+Real Estate/
+├── src/
+│   ├── app/
+│   │   ├── components/    # Componentes reutilizáveis
+│   │   ├── services/      # Serviços para APIs
+│   │   └── app.module.ts  # Módulo principal do Angular
+│   ├── assets/            # Imagens e outros recursos
+│   └── index.html         # Página principal
+├── angular.json           # Configurações do Angular CLI
+├── package.json           # Dependências do projeto
+├── tsconfig.json          # Configuração do TypeScript
+├── Dockerfile.dev         # Configuração da imagem Docker
+└── docker-compose.yml     # Configuração d orquestração dos containers
+```
+
+## 📝 Scripts Disponíveis
+
+- `ng serve` - Inicia o servidor de desenvolvimento
+- `ng build` - Gera o build para produção
+- `ng test` - Executa os testes unitários
+
+## 📦 Build para Produção
+
+```bash
+ng build --prod
+```
+
+Os arquivos otimizados serão gerados na pasta `dist/`.
+
+## 🤝 Contribuição
+
+1. Faça um fork do projeto
+2. Crie uma branch (`git checkout -b feature-nova`)
+3. Faça suas alterações e commit (`git commit -m 'Nova funcionalidade'`)
+4. Envie para o repositório (`git push origin feature-nova`)
+5. Abra um Pull Request
+
+## 🗒️ Licença
+
+[Adicione aqui a licença do seu projeto, ex: MIT, Apache 2.0, etc.]
