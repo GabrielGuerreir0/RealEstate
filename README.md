@@ -73,6 +73,24 @@ ng build --prod
 
 Os arquivos otimizados serão gerados na pasta `dist/`.
 
+## 📄 Gerar Páginas e Componentes
+
+### Criar um novo componente
+
+```bash
+ng generate component nome-do-componente
+# ou abreviado
+ng g c nome-do-componente
+```
+
+### Criar uma nova página (módulo com roteamento)
+
+```bash
+ng generate module nome-da-pagina --route nome-da-pagina --module app
+# ou abreviado
+ng g m nome-da-pagina --route nome-da-pagina --module app
+```
+
 ## 🤝 Contribuição
 
 1. Faça um fork do projeto
@@ -83,4 +101,4 @@ Os arquivos otimizados serão gerados na pasta `dist/`.
 
 ## 🗒️ Licença
 
-[Adicione aqui a licença do seu projeto, ex: MIT, Apache 2.0, etc.]
+Copyright (c) 2025 Real Estate.
