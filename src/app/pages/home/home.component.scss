@@ -1,17 +1,28 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
 .apresentacao {
   padding: 30px;
   display: flex;
   background-image: url("/assets/images/image1.png");
+  background-size: cover;
+  background-position: center;
+
   div {
     flex: 1;
     position: relative;
+
     h1 {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
       padding: 10px;
       margin-left: 3rem;
       font-size: 80px;
       word-break: keep-all;
       color: #ffffff;
+      text-align: left;
+      line-height: 1.1; // Mantém as quebras de linha organizadas
     }
+
     h1::before {
       position: absolute;
       content: " ";
@@ -19,6 +30,86 @@
       width: 100px;
       height: 6px;
       background-color: blue;
+    }
+
+    .search-bar {
+      margin-left: 3rem;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: fit-content; // Faz o input ter o tamanho do texto quebrado
+
+      .input-group {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 8px;
+        padding: 5px;
+        width: 180%; // Mesmo tamanho do título quebrado
+
+        input {
+          flex: 1;
+          padding: 12px;
+          border: none;
+          font-size: 18px;
+          border-radius: 8px 0 0 8px;
+          outline: none;
+        }
+
+        button {
+          background-color: #1e3a8a;
+          color: white;
+          border: none;
+          border-radius: 0 8px 8px 0;
+          padding: 12px 15px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          i {
+            font-size: 18px;
+          }
+
+          &:hover {
+            background-color: #0d2566;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsividade para telas menores
+@media (max-width: 768px) {
+  .apresentacao {
+    flex-direction: column;
+    text-align: center;
+
+    div {
+      h1 {
+        font-size: 50px;
+        margin-left: 0;
+      }
+
+      .search-bar {
+        margin-left: 0;
+        align-items: center;
+
+        .input-group {
+          flex-direction: row;
+          width: 100%;
+
+          input {
+            width: 100%;
+          }
+
+          button {
+            width: auto;
+          }
+        }
+      }
     }
   }
 }
