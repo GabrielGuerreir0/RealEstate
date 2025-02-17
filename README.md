@@ -36,7 +36,7 @@ ng serve
 ou se achar melhor utilizar o Docker:
 
 ```bash
-docker-compose -d --build estate-dev
+docker-compose up -d --build estate-dev
 ```
 
 Acesse o aplicativo em [http://localhost:8200](http://localhost:8200).
@@ -78,9 +78,9 @@ Os arquivos otimizados serão gerados na pasta `dist/`.
 ### Criar um novo componente
 
 ```bash
-ng generate component nome-do-componente
+ng generate component components/nome-do-componente
 # ou abreviado
-ng g c nome-do-componente
+ng g c components/nome-do-componente
 ```
 
 ### Criar uma nova página (módulo com roteamento)
