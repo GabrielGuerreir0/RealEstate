@@ -1,0 +1,10 @@
+<div class="carousel">
+  <div class="carousel-wrapper" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
+
+    <img *ngFor="let image of images" [src]="image" class="carousel-item" (click)="openLink()" />
+  </div>
+
+
+  <!-- Botões de navegação -->
+  <button class="next" (click)="nextSlide()">&#10095;</button>
+</div>

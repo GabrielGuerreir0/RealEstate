@@ -1,0 +1,43 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+
+  .carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  button {
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #0d2566;
+    border: none;
+    padding: 15px 25px 15px 25px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background 0.3s;
+
+    &:hover {
+      background-color: #0d2566;
+      color: #fff;
+    }
+  }
+
+  .next {
+    right: 10px;
+  }
+}
+img {
+  cursor: pointer;
+}
