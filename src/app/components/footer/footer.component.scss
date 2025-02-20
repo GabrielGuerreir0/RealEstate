@@ -1,0 +1,110 @@
+.footer {
+    padding: 1rem 1.5rem;
+    background-color: #1e3a8a;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: start;
+    padding-left: 10%;
+}
+
+.footer .first_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.footer .first_column .title {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.footer .first_column .text {
+    font-size: 20px;
+    font-weight: 500; 
+}
+
+.footer .entry {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; 
+    margin-top: 15px;
+}
+
+.footer .entry .nome,
+.footer .entry .email {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .entry .nome input,
+.footer .entry .email input {
+    padding: 0.5rem;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.footer .entry button {
+    margin-top:20px;
+    padding: 0.8rem 1.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.footer .entry button:hover {
+    background-color: #416f16; 
+}
+
+.footer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 20%;
+    margin-top: 100px;
+    gap: 30px; 
+}
+
+.footer .row .first_text,
+.footer .row .second_text{
+    font-size : 19px;
+    font-weight: 500;
+}
+
+.footer .autoral {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 50%;
+}
+
+.footer .second_column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.footer .second_column .text {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.footer .second_column .first_side img {
+    margin-top: 70px;
+    padding-left: 30%;
+}
