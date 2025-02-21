@@ -63,7 +63,8 @@
 }
 
 .login .column_entries .button button:hover {
-    background-color: #416f16; 
+    background-color: #93c5fd;
+    color: white;
 }
 
 .login .column_entries .forget {
@@ -94,7 +95,7 @@
     .login {
         padding: center;
     }
-    
+
     .login .column_entries {
         max-width: 90%; 
     }
