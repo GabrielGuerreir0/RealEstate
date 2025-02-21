@@ -5,45 +5,50 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 15px;
     justify-content: start;
     padding-left: 10%;
 }
 
-.footer .first_column {
+.footer .columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .columns .first_column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px; 
 }
 
-.footer .first_column .title {
+.footer .columns .first_column .title {
     font-size: 25px;
     font-weight: 800;
 }
 
-.footer .first_column .text {
+.footer .columns .first_column .text {
     font-size: 20px;
     font-weight: 500; 
 }
 
-.footer .entry {
+.footer .columns .entry {
     display: flex;
     flex-wrap: wrap;
     gap: 40px; 
     margin-top: 15px;
 }
 
-.footer .entry .nome,
+.footer .columns .entry .nome,
 .footer .entry .email {
     flex: 1; 
     display: flex;
     flex-direction: column;
 }
 
-.footer .entry .nome input,
-.footer .entry .email input {
+.footer .columns .entry .nome input,
+.footer .columns .entry .email input {
     padding: 0.5rem;
     font-size: 20px;
     border-radius: 6px;
@@ -52,7 +57,7 @@
     width: 100%;
 }
 
-.footer .entry button {
+.footer .columns .entry button {
     margin-top:20px;
     padding: 0.8rem 1.5rem;
     font-size: 16px;
@@ -66,11 +71,11 @@
     align-self: flex-start;
 }
 
-.footer .entry button:hover {
+.footer .columns .entry button:hover {
     background-color: #416f16; 
 }
 
-.footer .row {
+.footer .columns .row {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -79,32 +84,48 @@
     gap: 30px; 
 }
 
-.footer .row .first_text,
+.footer .columns .row .first_text,
 .footer .row .second_text{
     font-size : 19px;
     font-weight: 500;
 }
 
-.footer .autoral {
-    margin-top: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    padding-left: 50%;
-}
-
-.footer .second_column {
+.footer .columns .second_column {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px; 
 }
 
-.footer .second_column .text {
+.footer .columns .second_column .text {
     font-size: 25px;
     font-weight: 800;
 }
 
-.footer .second_column .first_side img {
+.footer .columns .second_column .first_side img {
     margin-top: 70px;
     padding-left: 30%;
 }
+
+.footer .autoral {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 30%;
+}
+@media (max-width: 768px) {
+    .footer {
+        padding: center;
+    }
+    .footer .columns {
+        flex-direction: column;
+        display: flex;
+    }
+    .footer .columns .first_column .entry {
+        flex-direction: column;
+    }
+    .footer .autoral {
+        padding-left: 3%;
+    }
+}
+
