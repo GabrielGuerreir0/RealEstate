@@ -1,0 +1,113 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+.login {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  min-height: 100vh;
+ // justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.login .text {
+    padding-left : 10%;
+    color : black;
+    font-size: 25px;
+    font-weight: 800;
+}
+ 
+.login .column_entries {
+    margin-top: 50px;
+}
+
+.login .column_entries .email, 
+.login .column_entries .password {
+    flex : 1;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.login .column_entries .email input,
+.login .column_entries .password input {
+    padding: 0.9rem;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-top: 15px;
+    width: 170%;
+}
+
+.login .column_entries .button {
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-left : 30%;
+}
+
+.login .column_entries .button button {
+    width: 140%;
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    border: black 2px solid;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.login .column_entries .button button:hover {
+    background-color: #416f16; 
+}
+
+.login .column_entries .forget {
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 40%;
+    font-size: 20px;
+    font-weight: 500;
+    color : #1e3a8a;
+}
+
+.login .column_entries .text {
+    padding-left: 25%;
+    margin-top: 40px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color : black;
+}
+
+.login .column_entries .register {
+    font-size: 20px;
+    font-weight: 600;
+    color : #1e3a8a;
+}
+
+@media (max-width: 768px) {
+    .login {
+        padding: center;
+    }
+    
+    .login .column_entries {
+        max-width: 90%; 
+    }
+
+    .login .column_entries .email input,
+    .login .column_entries .password input,
+    .login .column_entries .button button{
+        max-width: 90%;
+    }
+
+    .login .column_entries .forget,
+    .login .column_entries .text {
+        font-size: 16px;
+        padding-right: 60%;
+    }
+}
