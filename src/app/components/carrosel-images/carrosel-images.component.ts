@@ -10,9 +10,9 @@ import { CommonModule } from '@angular/common';
 })
 export class CarroselImagesComponent {
   images: string[] = [
-    'assets/images/Container.png',
-    'assets/images/Container.png',
-    'assets/images/Container.png',
+    'assets/images/slide1.png',
+    'assets/images/slide2.png',
+    'assets/images/slide3.png',
   ];
 
   currentIndex = 0;
