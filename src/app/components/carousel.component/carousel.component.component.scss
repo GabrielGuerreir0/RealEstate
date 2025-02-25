@@ -1,0 +1,140 @@
+/* Secção do Carrossel */
+.carousel-section {
+  clear: both; /* Garantir que o carrossel fique abaixo da secção anterior */
+  margin-bottom: 30px;
+}
+
+.separator {
+  display: flex;
+  width: 70%; /* Largura de 50% da largura total */
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente */
+  height: 3px; /* Espessura da linha */
+  background-color: #ccc; /* Cor da linha cinza */
+  margin: 0 auto; /* Garante o centramento da linha */
+  margin-bottom: 30px; /* Espaçamento abaixo da linha */
+}
+
+
+/* Estilo do Carrossel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  margin: auto;
+  overflow: hidden;
+  background-color: transparent; /* Fundo transparente */
+  border: none; /* Remove a borda */
+  box-shadow: none; /* Remove a sombra */
+  border-radius: 0; /* Remove o arredondamento */
+}
+
+.carousel-container {
+  width: 100%; /* Ocupa toda a largura da tela */
+  overflow: hidden; /* Esconde o excesso de conteúdo fora do carrossel */
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex; /* Exibe as imagens em linha */
+  transition: transform 0.5s ease-in-out; /* Transição suave entre as imagens */
+}
+
+.carousel-item {
+  flex: 0 0 auto; /* Impede que os itens se estiquem e quebrem o layout */
+  width: 25%; /* Exibe 4 imagens por vez (100% / 4 = 25%) */
+  padding: 10px;
+}
+
+.carousel-item img {
+  width: 100%; /* A imagem ocupa 100% da largura do item */
+  height: 212px; /* Altura fixa de 212px */
+  max-width: 335px; /* Largura máxima de 335px */
+  object-fit: cover; /* Faz com que a imagem ocupe o espaço sem distorção */
+  border-radius: 0; /* Remove o arredondamento das bordas das imagens */
+}
+
+.localidade-texto {
+  font-size: 12px; /* Tamanho menor para o texto de localidade */
+  color: #ffffff; /* Cor do texto (branca) */
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
+  text-align: center;
+  padding: 5px 0;
+  font-weight: bold;
+  z-index: 1; /* Garante que o texto apareça sobre as imagens */
+}
+
+/* Wrapper do Carrossel */
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 212px; /* Define uma altura fixa para o carrossel */
+}
+
+/* Cada Item do Carrossel */
+.carousel-item {
+  width: 23.5%; /* Exibe 4 imagens por vez */
+  flex: 0 0 23.5%; /* Garantir que apenas 4 imagens apareçam por vez */
+  position: relative;
+}
+
+/* Imagem */
+.carousel-item img {
+  width: 100%; /* A imagem ocupa toda a largura do item */
+  height: 212px; /* Define a altura da imagem */
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+}
+
+/* Nome da Localidade abaixo da Imagem */
+.location-name {
+  position: relative;
+  z-index: 1;
+  background-color: #0d6efd; /* Cor de fundo do texto */
+  color: white;
+  text-align: center;
+  padding: 5px 0; /* Reduz o padding para ficar um pouco menor que a imagem */
+  font-size: 14px; /* Tamanho da fonte um pouco menor que a imagem */
+  font-weight: bold;
+  margin-top: 5px; /* Espaço entre o texto e a parte inferior da imagem */
+}
+
+/* Botões de Navegação (Anterior e Próximo) */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo mais escuro ao passar o mouse */
+  }
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Ajuste para a posição do texto */
+.carousel-item .location-name {
+  position: relative;
+  z-index: 1; /* Garante que o texto fique acima da imagem */
+}
+
+/* Garantir que o conteúdo da secção do carrossel ocupe o espaço correto */
+.carousel-wrapper {
+  height: 212px; /* Define uma altura fixa para o carrossel */
+}

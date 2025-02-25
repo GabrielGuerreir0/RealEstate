@@ -1,0 +1,17 @@
+<div class="carousel-section">
+  <!-- Linha de separação -->
+  <div class="separator"></div>
+
+  <div class="carousel">
+    <div class="carousel-wrapper" [style.transform]="'translateX(' + (-currentIndex * 25) + '%)'">
+      <div *ngFor="let image of images" class="carousel-item">
+        <img [src]="image.src" alt="Imagem" />
+        <div class="location-name">{{ image.location }}</div>
+      </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <button class="prev" (click)="moveToPrev()" [disabled]="currentIndex === 0">&#10094;</button>
+    <button class="next" (click)="moveToNext()" [disabled]="currentIndex === images.length - 4">&#10095;</button>
+  </div>
+</div>
