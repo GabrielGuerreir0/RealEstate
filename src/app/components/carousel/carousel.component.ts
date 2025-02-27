@@ -12,21 +12,21 @@ import { CommonModule } from '@angular/common';
 export class CarouselComponent {
   currentIndex = 0;
   images = [
-    { src: 'assets/images/slide1.png', location: 'Fortaleza' },
-    { src: 'assets/images/slide2.png', location: 'Guaramiranga' },
-    { src: 'assets/images/slide3.png', location: 'Juazeiro do Norte' },
-    { src: 'assets/images/Container.png', location: 'Localidade 4' },
-    { src: 'assets/images/Container.png', location: 'Localidade 5' },
-    { src: 'assets/images/Container.png', location: 'Localidade 6' },
-    { src: 'assets/images/Container.png', location: 'Localidade 7' },
-    { src: 'assets/images/Container.png', location: 'Localidade 8' },
+    { src: 'assets/images/cumbuco.png', location: 'Fortaleza' },
+    { src: 'assets/images/maracanau.png', location: 'Maracanaú' },
+    { src: 'assets/images/juazeiro.png', location: 'Juazeiro do Norte' },
+    { src: 'assets/images/caninde.png', location: 'Canindé' },
+    { src: 'assets/images/eusebio.jpg', location: 'Eusébio' },
+    { src: 'assets/images/cascavel.png', location: 'Cascavel'},
+    { src: 'assets/images/guaramiranga.png', location: 'Guaramiranga'},
+    { src: 'assets/images/jericoacoara.png', location: 'Jijoca de Jericoacoara'}
   ];
 
   moveToNext() {
     if (this.currentIndex < this.images.length - 4) {
       this.currentIndex++;
     } else {
-      this.currentIndex = 0; // Volta para o início do carrossel
+      this.currentIndex = 0; 
     }
   }
 
@@ -34,7 +34,7 @@ export class CarouselComponent {
     if (this.currentIndex > 0) {
       this.currentIndex--;
     } else {
-      this.currentIndex = this.images.length - 4; // Vai para o final do carrossel
+      this.currentIndex = this.images.length - 4;
     }
   }
 }
