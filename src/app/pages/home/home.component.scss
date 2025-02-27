@@ -215,3 +215,78 @@
     }
   }
 }
+
+
+.segunda-informacao {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  gap: 30px; /* Espaçamento entre o texto e a imagem */
+  padding: 40px 20px; /* Espaçamento da seção */
+  text-align: left; /* Alinha o texto à esquerda dentro do container */
+  background-color: #f9f9f9; /* Cor de fundo suave para a seção */
+
+  .texto {
+    max-width: 700px; /* Limita a largura do texto */
+    flex: 1;
+    font-family: Arial, sans-serif;
+  }
+
+  .titulo {
+    color: #1e3a8a; /* Cor azul para o título */
+    font-weight: bold; /* Negrito */
+    font-size: 2.5rem; /* Tamanho maior para o título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+  }
+
+  .subtitulo {
+    color: #000000; /* Cor preta para o subtítulo */
+    font-weight: normal; /* Sem negrito */
+    font-size: 2.5rem; /* Mesmo tamanho do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do subtítulo */
+  }
+
+  .descricao {
+    color: #000000; /* Texto preto */
+    font-size: 1rem; /* Tamanho de fonte menor */
+    line-height: 1.5; /* Espaçamento entre as linhas para melhorar a legibilidade */
+  }
+
+  .imagem {
+    width: 700px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+  }
+
+  /* Botão "Buscar Imóvel" */
+  .buscar-imovel {
+    background-color: #1e3a8a; /* Cor azul do botão */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Borda arredondada de 5px */
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px; /* Espaçamento acima do botão */
+    display: inline-block;
+
+    &:hover {
+      background-color: #0d2566; /* Cor do botão ao passar o mouse */
+    }
+  }
+
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    flex-direction: column; /* Muda para layout em coluna em telas pequenas */
+    text-align: center; /* Alinha o texto ao centro em telas pequenas */
+    .texto {
+      max-width: 100%; /* Remove a limitação de largura do texto */
+    }
+    .imagem {
+      width: 100%; /* A imagem ocupa 100% da largura em telas pequenas */
+      margin-top: 20px; /* Adiciona espaçamento acima da imagem */
+    }
+  }
+}
