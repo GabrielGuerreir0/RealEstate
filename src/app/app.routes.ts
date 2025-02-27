@@ -21,6 +21,11 @@ export const routes: Routes = [
     path : 'reset',
     loadComponent: () => 
       import('./pages/user_pages/reset/reset.component').then((m) => m.ResetComponent),
+  },
+  {
+    path : 'list',
+    loadComponent: () => 
+      import('./pages/list_houses/list.component').then((m) => m.ListComponent)
   }
 ];
 
