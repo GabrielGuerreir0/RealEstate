@@ -1,26 +1,36 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' }, // Rota inicial
+  { path: '', redirectTo: 'home', pathMatch: 'full' }, 
   {
     path: 'home',
     loadComponent: () =>
-      import('./pages/home/home.component').then((m) => m.HomeComponent),
+      import('./pages/home/home.component').then((m) => m.HomeComponent)
   },
   {
     path: 'login', 
     loadComponent: () =>
-      import('./pages/user_pages/login/login.component').then((m) => m.LoginComponent),
+      import('./pages/user_pages/login/login.component').then((m) => m.LoginComponent)
+  },
+  {
+    path: 'login-admin',
+    loadComponent: () => 
+      import('./pages/admin_pages/login_admin/login-admin.component').then((m) => m.LoginAdminComponent)
+  },
+  {
+    path: 'reset-admin',
+    loadComponent: () => 
+      import('./pages/admin_pages/reset_admin/reset-admin.component').then((m) => m.ResetAdminComponent)
   },
   {
     path: 'register',
     loadComponent: () => 
-      import('./pages/user_pages/register/register.component').then((m) => m.RegisterComponent),
+      import('./pages/user_pages/register/register.component').then((m) => m.RegisterComponent)
   },
   {
     path : 'reset',
     loadComponent: () => 
-      import('./pages/user_pages/reset/reset.component').then((m) => m.ResetComponent),
+      import('./pages/user_pages/reset/reset.component').then((m) => m.ResetComponent)
   },
   {
     path : 'list',

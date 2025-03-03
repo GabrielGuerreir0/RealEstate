@@ -1,0 +1,94 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+.reset-admin {
+  margin-top: 150px;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.reset-admin .text {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.reset-admin .column_entries {
+  margin-top: 50px;
+}
+
+.column_entries {
+  padding: 0rem 30% 0rem 30%;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.reset-admin .column_entries .email,
+.reset-admin .column_entries .password,
+.reset-admin .column_entries .passwordConfirm {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 1rem;
+  font-size: 20px;
+  border-radius: 6px;
+  border: 0.1px solid black;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.reset-admin .column_entries .button {
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset-admin .column_entries .button button {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.reset-admin .column_entries .button button:hover {
+  background-color: #93c5fd;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .reset-admin {
+    padding: center;
+  }
+
+  .reset-admin .column_entries {
+    max-width: 90%;
+  }
+
+  .reset-admin .column_entries .email input,
+  .reset-admin .column_entries .password input,
+  .reset-admin .column_entries .passwordConfirm input,
+  .reset-admin .column_entries .button button {
+    max-width: 90%;
+  }
+
+  .reset-admin .column_entries .forget,
+  .reset-admin .column_entries .text {
+    font-size: 16px;
+  }
+}

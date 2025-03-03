@@ -1,7 +1,7 @@
 <app-nav-bar></app-nav-bar>
-<div class="login">
+<div class="login-admin">
     <div class="text">
-        <h2>Login do cliente</h2>
+        <h2>Login do administrador</h2>
     </div>
     <div class="column_entries">
         <div class="email">
@@ -13,13 +13,14 @@
             <input type="password" class="input_password" placeholder="Digite sua senha" />
         </div>
         <div class="button">
-            <button class="botao"(click)="GoToList()">Entrar</button>
-        </div>
+            <button class="botao" (click)="GoToRegister()">Entrar</button>
+          </div>
+                   
         <div class="forget">
-            <a (click)="GoToReset()">Esqueci minha senha</a>
+            <div (click)="GoToReset()">Esqueci minha senha</div>
         </div>
-        <div class="text">
-            Não possui conta? <a (click)="GoToRegister()" class="register">Cadastre-se</a>
-        </div>        
+       <!--<div class="text">
+            Não possui conta? <a href="/register" class="register">Cadastre-se</a>
+        </div>  -->       
     </div>
 </div>

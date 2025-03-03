@@ -4,24 +4,21 @@ import { NavBarComponent } from './../../../components/nav-bar/nav-bar.component
 
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-login-admin',
   standalone: true,
   imports: [NavBarComponent],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss',
+  templateUrl: './login-admin.component.html',
+  styleUrl: './login-admin.component.scss',
 })
-export class LoginComponent {
+export class LoginAdminComponent {
   constructor(private router : Router) {}
 
-  GoToList() {
-    this.router.navigate(['/list'])
+  GoToRegister() {
+    this.router.navigate(['/register-property']);
   }
 
   GoToReset() {
-    this.router.navigate(['/reset'])
+    this.router.navigate(['/reset-admin'])
   }
 
-  GoToRegister() {
-    this.router.navigate(['/register'])
-  }
 }

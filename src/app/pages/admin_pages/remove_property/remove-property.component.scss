@@ -1,0 +1,74 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+.remove-property {
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  max-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.remove-property .text {
+  padding-top: 50px;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.remove-property .first-box {
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-property .first-box {
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.remove-property .first-box .text {
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+}
+
+.remove-property .first-box .row_id {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.remove-property .first-box .row_id input{
+    padding: 1rem 1.3rem;
+    margin-bottom: 10px;
+    width: 30%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.remove-property .first-box .row_id .button button {
+    width: 100%;
+    padding: 1rem 1.3rem;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+  }
+  
+.remove-property .first-box .row_id .button button:hover {
+background-color: #93c5fd;
+color: white;
+}

@@ -43,14 +43,45 @@
       transition: color 0.3s;
       text-align: center;
       padding: 6px 10px;
-      cursor: pointer; // Adiciona o cursor de ponteiro
-
+      cursor: pointer; 
       &:hover,
       &.active {
         color: #93c5fd;
       }
     }
   }
+
+ &__dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+ &__dropdown__menu {
+  position: absolute;
+  flex-direction: column;
+  top: 40px;
+  left: 60;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1000;
+}
+
+ &__dropdown__menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+ &__dropdown__menu a:hover {
+  background-color: #f0f0f0;
+}
+
 
   &__button {
     background-color: white;
@@ -62,8 +93,8 @@
     transition: background 0.3s, color 0.3s;
     text-align: center;
     white-space: nowrap;
-    margin-left: auto; // Move o botão para a extrema direita
-    cursor: pointer; // Torna o botão clicável
+    margin-left: auto; 
+    cursor: pointer; 
 
     &:hover {
       background-color: #93c5fd;

@@ -1,0 +1,221 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+.edit-property {
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  max-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.edit-property .text {
+  padding-top: 50px;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.edit-property .first-box {
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-property .first-box {
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.edit-property .first-box .text {
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+}
+
+.edit-property .first-box .row_id {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.edit-property .first-box .row_id input{
+    padding: 1rem 1.3rem;
+    margin-bottom: 10px;
+    width: 30%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.edit-property .first-box .row_id .button button {
+    width: 100%;
+    padding: 1rem 1.3rem;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+  }
+  
+.edit-property .first-box .row_id .button button:hover {
+background-color: #93c5fd;
+color: white;
+}
+
+.edit-property .first-box .text-local {
+    text-align: center;
+}
+
+.edit-property .first-box .text-local h3 {
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+}
+
+.edit-property .first-box .column_entries {
+  padding: 0rem 30% 0rem 30%;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.edit-property .first-box .column_entries .type,
+.edit-property .first-box .column_entries .address,
+.edit-property .first-box .column_entries .row .neighborhood,
+.edit-property .first-box .column_entries .row .city,
+.edit-property .first-box .column_entries .state {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.edit-property .first-box .column_entries .row {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-property .first-box .column_entries .input-type {
+    padding: 0rem 30% 0rem 30%;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.edit-property .first-box .column_entries .input_type:focus {
+    border-color: #0d6efd;
+    outline: none;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 1rem;
+  font-size: 20px;
+  border-radius: 6px;
+  border: 0.1px solid black;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.edit-property .first-box .column_entries .first-row, 
+.second-row, .third-row, .fourth-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.edit-property .first-box .column_entries .first-row 
+.edit-property .first-box .column_entries .button {
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-property .first-box .column_entries .description input{
+    height: 200px;
+}
+
+.edit-property .first-box .column_entries .button button {
+  margin-top: 40px;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.edit-property .first-box .column_entries .button button:hover {
+  background-color: #93c5fd;
+  color: white;
+}
+
+.edit-property .first-box .column_entries .text {
+  margin-top: 0px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.edit-property .first-box .column_entries .register {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+@media (max-width: 768px) {
+  .edit-property {
+    padding: center;
+  }
+
+  .edit-property .first-box .column_entries {
+    max-width: 90%;
+  }
+
+  .edit-property .first-box .column_entries .type,
+  .edit-property .first-box .column_entries .address,
+  .edit-property .first-box .column_entries .row .neighborhood,
+  .edit-property .first-box .column_entries .row .city,
+  .edit-property .first-box .column_entries .state,
+  .edit-property .first-box
+    .column_entries
+    input
+    .edit
+    .column_entries
+    .button
+    button {
+    max-width: 90%;
+  }
+
+  .edit-property .first-box .column_entries .text {
+    font-size: 16px;
+    padding-right: 60%;
+  }
+}
+
