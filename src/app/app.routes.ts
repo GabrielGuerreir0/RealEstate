@@ -38,6 +38,11 @@ export const routes: Routes = [
       import('./pages/list_houses/list.component').then((m) => m.ListComponent)
   },
   {
+    path: 'about',
+    loadComponent: () => 
+      import('./pages/about/about.component').then((m) => m.AboutComponent)
+  },
+  {
     path : 'register-property',
     loadComponent: () => 
       import('./pages/admin_pages/register_property/register-property.component').then((m) => m.RegistePropertyComponent)

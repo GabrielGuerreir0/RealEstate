@@ -1,0 +1,44 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+.about {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    gap: 30px; /* Espaçamento entre o texto e a imagem */
+    padding: 40px 20px; /* Espaçamento da seção */
+    text-align: left; /* Alinha o texto à esquerda dentro do container */
+    background-color: #f9f9f9; /* Cor de fundo suave para a seção */
+  
+    .texto {
+      max-width: 700px; /* Limita a largura do texto */
+      flex: 1;
+      font-family: Arial, sans-serif;
+    }
+  
+    .titulo {
+      color: #1e3a8a; /* Cor azul para o título */
+      font-weight: bold; /* Negrito */
+      font-size: 2.5rem; /* Tamanho maior para o título */
+      margin-bottom: 10px; /* Espaçamento abaixo do título */
+    }
+  
+    .subtitulo {
+      color: #000000; /* Cor preta para o subtítulo */
+      font-weight: normal; /* Sem negrito */
+      font-size: 2.5rem; /* Mesmo tamanho do título */
+      margin-bottom: 10px; /* Espaçamento abaixo do subtítulo */
+    }
+  
+    .descricao {
+      color: #000000; /* Texto preto */
+      font-size: 1rem; /* Tamanho de fonte menor */
+      line-height: 1.5; /* Espaçamento entre as linhas para melhorar a legibilidade */
+    }
+  
+    .imagem {
+      width: 700px; 
+      height: auto; /* Mantém a proporção da imagem */
+      object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+      border-radius: 8px; /* Bordas arredondadas na imagem */
+    }
+}
