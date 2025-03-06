@@ -16,19 +16,18 @@
   font-weight: 800;
 }
 
-
 .register-property .first-box {
-    align-items: center;
+  align-items: center;
 }
 
 .register-property .first-box .text-local {
-    text-align: center;
+  text-align: center;
 }
 
 .register-property .first-box .text-local h3 {
-    font-size: 25px;
-    font-weight: 800;
-    color: black;
+  font-size: 25px;
+  font-weight: 800;
+  color: black;
 }
 
 .register-property .first-box .column_entries {
@@ -49,27 +48,27 @@
 }
 
 .register-property .first-box .column_entries .row {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
 }
 
 .register-property .first-box .column_entries .input-type {
-    padding: 0rem 30% 0rem 30%;
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 500;
-    border: 0.1px solid black;
-    border-radius: 5px;
-    background-color: white;
-    cursor: pointer;
+  padding: 0rem 30% 0rem 30%;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 0.1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
 }
 
 .register-property .first-box .column_entries .input_type:focus {
-    border-color: #0d6efd;
-    outline: none;
+  border-color: #0d6efd;
+  outline: none;
 }
 
 input {
@@ -83,24 +82,31 @@ input {
   box-sizing: border-box;
 }
 
-.register-property .first-box .column_entries .first-row, 
-.second-row, .third-row, .fourth-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
+.register-property .first-box .column_entries .first-row,
+.second-row,
+.third-row,
+.fourth-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-
-.register-property .first-box .column_entries .first-row 
-.register-property .first-box .column_entries .button {
+.register-property
+  .first-box
+  .column_entries
+  .first-row
+  .register-property
+  .first-box
+  .column_entries
+  .button {
   margin-top: 40px;
   justify-content: center;
   align-items: center;
 }
 
-.register-property .first-box .column_entries .description input{
-    height: 200px;
+.register-property .first-box .column_entries .description input {
+  height: 200px;
 }
 
 .register-property .first-box .column_entries .button button {
@@ -151,7 +157,8 @@ input {
   .register-property .first-box .column_entries .row .neighborhood,
   .register-property .first-box .column_entries .row .city,
   .register-property .first-box .column_entries .state,
-  .register-property .first-box
+  .register-property
+    .first-box
     .column_entries
     input
     .register
@@ -166,4 +173,3 @@ input {
     padding-right: 60%;
   }
 }
-

@@ -1,0 +1,25 @@
+<div class="property-card">
+  <div class="property-card__image">
+    <img [src]="imageUrl" alt="Imagem do imóvel" />
+    <span class="property-card__badge" *ngIf="isNew">NOVIDADE</span>
+    <button class="property-card__favorite" (click)="toggleFavorite()">
+      ♥
+    </button>
+  </div>
+
+  <div class="property-card__details">
+    <span class="property-card__category">Apartamento</span>
+    <span class="property-card__code">cód. {{ propertyCode }}</span>
+
+    <h3 class="property-card__title">{{ title }}</h3>
+
+    <p class="property-card__info">
+      {{ area }} m² &nbsp; | &nbsp;
+      {{ bedrooms }} Dorms. &nbsp; | &nbsp;
+      {{ suites }} Suíte &nbsp; | &nbsp;
+      {{ parking }} Vagas
+    </p>
+
+    <h2 class="property-card__price">R$ {{ price | number:'1.0-0' }}</h2>
+  </div>
+</div>

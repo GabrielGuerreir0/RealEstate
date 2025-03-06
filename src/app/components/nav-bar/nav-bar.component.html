@@ -6,15 +6,15 @@
   <ul class="navbar__links">
     <li><a routerLink="/home" routerLinkActive="active">INÍCIO</a></li>
     <li><a routerLink="/about" routerLinkActive="active">SOBRE</a></li>
-    <li><a routerLink="/" routerLinkActive="active">LOCAÇÕES</a></li>
-    <li><a routerLink="/" routerLinkActive="active">COMPRAR</a></li>
-    <li class="navbar__dropdown">
-      <a href="#" class="navbar__button" (click)="toggleDropdown($event)">LOGIN</a>
+    <li><a routerLink="/locacoes" routerLinkActive="active">LOCAÇÕES</a></li>
+    <li><a routerLink="/comprar" routerLinkActive="active">COMPRAR</a></li>
 
+    <li class="navbar__dropdown">
+      <button class="navbar__button" (click)="toggleDropdown($event)">LOGIN</button>
       <div class="dropdown__menu" *ngIf="showDropdown">
         <a routerLink="/login-admin">Administrador</a>
         <a routerLink="/login">Cliente</a>
       </div>
-    </li>  
+    </li>
   </ul>
 </nav>

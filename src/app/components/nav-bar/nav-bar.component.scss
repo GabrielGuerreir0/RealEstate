@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  justify-content: space-between; // Distribui os itens na horizontal
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
   background-color: #1e3a8a;
@@ -8,18 +8,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
 
-  &__logo {
-    display: flex;
-    align-items: center;
-    flex-grow: 0;
-
-    img {
-      height: 40px;
-      margin-right: 20px;
-    }
-  }
-  ul {
-    justify-content: end;
+  &__logo img {
+    height: 40px;
   }
 
   &__links {
@@ -27,114 +17,69 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-grow: 1; // Faz com que os links ocupem espaço e joguem o botão para a direita
-
-    li {
-      display: flex;
-      align-items: center;
-    }
 
     li a {
-      color: white;
+      color: #93c5fd;
       text-decoration: none;
       font-size: 1rem;
       font-weight: bold;
       text-transform: uppercase;
-      transition: color 0.3s;
-      text-align: center;
-      padding: 6px 10px;
-      cursor: pointer; 
-      &:hover,
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+
+      &:hover {
+        color: white;
+      }
+
       &.active {
-        color: #93c5fd;
+        color: white;
       }
     }
   }
 
- &__dropdown {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
+  &__dropdown {
+    position: relative;
+  }
 
- &__dropdown__menu {
-  position: absolute;
-  flex-direction: column;
-  top: 40px;
-  left: 60;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  min-width: 150px;
-  z-index: 1000;
-}
+  .dropdown__menu {
+    position: absolute;
+    top: 100%;
+    right: 2%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
 
- &__dropdown__menu a {
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-  transition: background 0.3s;
-}
+    a {
+      padding: 10px;
+      color: #1e3a8a;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background 0.3s;
 
- &__dropdown__menu a:hover {
-  background-color: #f0f0f0;
-}
-
+      &:hover {
+        background-color: #93c5fd;
+      }
+    }
+  }
 
   &__button {
     background-color: white;
-    color: #1e3a8a !important;
+    color: #1e3a8a;
     padding: 8px 16px;
     border-radius: 8px;
     font-weight: bold;
     font-size: 1rem;
+    cursor: pointer;
     transition: background 0.3s, color 0.3s;
-    text-align: center;
-    white-space: nowrap;
-    margin-left: auto; 
-    cursor: pointer; 
+    border: none;
 
     &:hover {
-      background-color: #93c5fd;
-      color: white;
-    }
-  }
-
-  // Ajuste responsivo para telas menores
-  @media (max-width: 1024px) {
-    &__links {
-      gap: 15px;
-    }
-
-    li a {
-      font-size: 0.9rem;
-    }
-
-    &__button {
-      padding: 6px 14px;
-      font-size: 0.9rem;
-    }
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-
-    &__logo {
-      margin-bottom: 10px;
-    }
-
-    &__links {
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    &__button {
-      width: 100%;
-      text-align: center;
-      margin-left: 0; // Centraliza o botão em telas pequenas
+      color: #93c5fd;
     }
   }
 }
