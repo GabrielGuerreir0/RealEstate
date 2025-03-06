@@ -8,7 +8,7 @@
   </div>
 
   <div class="property-card__details">
-    <span class="property-card__category">Apartamento</span>
+    <span class="property-card__category"> {{ type }}</span>
     <span class="property-card__code">cód. {{ propertyCode }}</span>
 
     <h3 class="property-card__title">{{ title }}</h3>
@@ -20,6 +20,14 @@
       {{ parking }} Vagas
     </p>
 
-    <h2 class="property-card__price">R$ {{ price | number:'1.0-0' }}</h2>
+    <div class="images">
+      <img src="assets/images/email.png" alt="email"/>
+      <img src="assets/images/whatsapp.png" alt="whatsapp"/>
+    </div>
+
+    <div class="details">
+      <h2 class="functionality"> {{ functionality }}</h2>
+     <h2 class="price">R$ {{ price | number:'1.0-0' }}</h2>
+    </div>
   </div>
 </div>

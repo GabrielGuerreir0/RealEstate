@@ -10,10 +10,30 @@
             Que você só encontra na VERTICE Lux Realthy
         </div>
     </div>
-
 </div>
-<app-property-card [imageUrl]="'assets/images/parceiro1.png'" [isNew]="false" [title]="'Pinheiros'" [area]="253" [bedrooms]="4" [suites]="1" [parking]="3" [price]="4200000" [propertyCode]="96216"></app-property-card>
 
+<div class="text-card">
+    Imóveis disponíveis
+</div>
+<div class="customer">
+    <h2>
+        Querido(a) cliente, entre em contato com nosso administrador 
+        para tratar do respectivo imóvel pelos
+        canais assim dispostos (email e whatsapp).
+    </h2>
+</div>
 
+<div class="cards-container">
+    <div class="cards">
+        <app-property-card [imageUrl]="'assets/images/cumbuco.png'" [type]="'Casa'" [isNew]="false" [title]="'Meireles, Fortaleza-CE'" [area]="253" [bedrooms]="4" [suites]="1" [parking]="3" [price]="3800000" [propertyCode]="96216" [functionality]="'Compra'"></app-property-card>
+        <app-property-card [imageUrl]="'assets/images/maracanau.png'" [type]="'Casa'" [isNew]="false" [title]="'Jardim da Serra, Maracanaú-CE'" [area]="200" [bedrooms]="6" [suites]="1" [parking]="3" [price]="4200000" [propertyCode]="96217" [functionality]="'Compra'"></app-property-card>
+        <app-property-card [imageUrl]="'assets/images/eusebio.jpg'" [type]="'Casa'" [isNew]="false" [title]="'Coité, Eusébio-CE'" [area]="200" [bedrooms]="5" [suites]="1" [parking]="8" [price]="8900" [propertyCode]="96217" [functionality]="'Locação'"></app-property-card>
+        <app-property-card [imageUrl]="'assets/images/guaramiranga.png'" [type]="'Casa'" [isNew]="false" [title]="'Serra dos Maciços, Guaramiranga-CE'" [area]="300" [bedrooms]="6" [suites]="3" [parking]="16" [price]="12200" [propertyCode]="96218" [functionality]="'Locação'"></app-property-card>
+        <app-property-card [imageUrl]="'assets/images/juazeiro.png'" [type]="'Casa'" [isNew]="false" [title]="'Lagoa Seca, Juazeiro do Norte-CE'" [area]="200" [bedrooms]="6" [suites]="1" [parking]="3" [price]="405000" [propertyCode]="96219" [functionality]="'Compra'"></app-property-card>
+        <app-property-card [imageUrl]="'assets/images/cascavel.png'" [type]="'Casa'" [isNew]="false" [title]="'São Cristóvão, Cascavel-CE'" [area]="200" [bedrooms]="6" [suites]="1" [parking]="3" [price]="2900000" [propertyCode]="96220" [functionality]="'Compra'"></app-property-card>
+        <app-property-card [imageUrl]="'assets/images/caninde.png'" [type]="'Casa'" [isNew]="false" [title]="'Bela Vista, Canindé-CE'" [area]="200" [bedrooms]="6" [suites]="1" [parking]="9" [price]="8400" [propertyCode]="96221" [functionality]="'Locação'"></app-property-card>
+        <app-property-card [imageUrl]="'assets/images/jericoacoara.png'" [type]="'Casa de praia'" [isNew]="false" [title]="'Lagoa Azul, Jijoca de Jericoacoara'" [area]="180" [bedrooms]="4" [suites]="2" [parking]="6" [price]="5500" [propertyCode]="96222" [functionality]="'Locação'"></app-property-card>
+    </div>
+</div>
 <div class="margin"></div>
 <app-footer></app-footer>

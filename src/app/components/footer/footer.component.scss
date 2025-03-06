@@ -6,21 +6,21 @@
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
     justify-content: start;
-    padding-left: 10%;
+    padding-left: 6%;
 }
 
 .footer .columns {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .footer .columns .first_column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 10px; 
+    gap: 3px; 
 }
 
 .footer .columns .first_column .title {

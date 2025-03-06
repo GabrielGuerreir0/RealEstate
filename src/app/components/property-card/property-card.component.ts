@@ -10,6 +10,7 @@ import { Component, Input } from '@angular/core';
 })
 export class PropertyCardComponent {
   @Input() imageUrl!: string;
+  @Input() type!: string;
   @Input() isNew: boolean = false;
   @Input() title!: string;
   @Input() area!: number;
@@ -18,6 +19,7 @@ export class PropertyCardComponent {
   @Input() parking!: number;
   @Input() price!: number;
   @Input() propertyCode!: number;
+  @Input() functionality!: string;
 
   isFavorite: boolean = false;
 
