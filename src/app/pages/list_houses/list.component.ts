@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { NavBarUserComponent } from '../../components/navbar-user/navbar-user.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { PropertyCardComponent } from '../../components/property-card/property-card.component';
@@ -11,5 +12,9 @@ import { PropertyCardComponent } from '../../components/property-card/property-c
   styleUrl: './list.component.scss',
 })
 export class ListComponent {
-  constructor() {}
+  constructor(private router : Router) {}
+
+  navigateToDetails(propertyCode: number) {
+    this.router.navigate(['/property-details', propertyCode]); 
+  }
 }

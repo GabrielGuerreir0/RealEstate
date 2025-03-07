@@ -56,6 +56,11 @@ export const routes: Routes = [
     path : 'remove-property',
     loadComponent: () => 
       import('./pages/admin_pages/remove_property/remove-property.component').then((m) => m.RemovePropertyComponent)
+  },
+  {
+    path : 'property-details/:id',
+    loadComponent: () => 
+        import('./pages/property-details/property-details.component').then((m) => m.PropertyDetailsComponent)
   }
 ];
 

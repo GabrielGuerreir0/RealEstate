@@ -1,4 +1,4 @@
-<div class="property-card">
+<div class="property-card" (click)="navigateToDetails()">
   <div class="property-card__image">
     <img [src]="imageUrl" alt="Imagem do imóvel" />
     <span class="property-card__badge" *ngIf="isNew">NOVIDADE</span>

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-property-card',
@@ -9,6 +10,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './property-card.component.scss',
 })
 export class PropertyCardComponent {
+  constructor(private router : Router) {}
+
   @Input() imageUrl!: string;
   @Input() type!: string;
   @Input() isNew: boolean = false;
@@ -20,12 +23,17 @@ export class PropertyCardComponent {
   @Input() price!: number;
   @Input() propertyCode!: number;
   @Input() functionality!: string;
+  @Output() propertyClicked = new EventEmitter<number>(); 
 
   isFavorite: boolean = false;
 
   toggleFavorite() {
     this.isFavorite = !this.isFavorite;
   }
+
+  navigateToDetails() {
+    this.router.navigate(['/property-details', this.propertyCode]); 
+  }
   email: string = 'exemplo@email.com'; 
-  whatsappNumber: string = '5511999999999'
+  whatsappNumber: string = '5585999999999'
 }
