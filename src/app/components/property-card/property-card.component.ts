@@ -26,4 +26,6 @@ export class PropertyCardComponent {
   toggleFavorite() {
     this.isFavorite = !this.isFavorite;
   }
+  email: string = 'exemplo@email.com'; 
+  whatsappNumber: string = '5511999999999'
 }

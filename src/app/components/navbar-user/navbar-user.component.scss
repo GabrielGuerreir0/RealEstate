@@ -1,4 +1,4 @@
-.navbar-admin {
+.navbar-user {
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -44,6 +44,7 @@
         text-align: center;
         padding: 6px 10px;
         cursor: pointer; 
+  
         &:hover,
         &.active {
           color: #93c5fd;

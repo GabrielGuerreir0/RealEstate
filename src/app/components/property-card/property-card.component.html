@@ -15,15 +15,20 @@
 
     <p class="property-card__info">
       {{ area }} m² &nbsp; | &nbsp;
-      {{ bedrooms }} Dorms. &nbsp; | &nbsp;
-      {{ suites }} Suíte &nbsp; | &nbsp;
+      {{ bedrooms }} Quartos. &nbsp; | &nbsp;
+      {{ suites }} Suíte(s) &nbsp; | &nbsp;
       {{ parking }} Vagas
     </p>
 
-    <div class="images">
+  <div class="images">
+    <a [href]="'mailto:' + email">
       <img src="assets/images/email.png" alt="email"/>
+    </a>
+  
+    <a [href]="'https://wa.me/' + whatsappNumber" target="_blank">
       <img src="assets/images/whatsapp.png" alt="whatsapp"/>
-    </div>
+    </a>
+  </div>
 
     <div class="details">
       <h2 class="functionality"> {{ functionality }}</h2>
