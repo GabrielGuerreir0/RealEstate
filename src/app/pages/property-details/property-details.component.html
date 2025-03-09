@@ -51,6 +51,12 @@
     </div>
 </div>
 
+  <div class="gallery">
+        <h4>Aprecie o interior do imóvel</h4>
+        <div class="gallery-container">
+            <img *ngFor="let image of property.images" [src]="image" alt="Foto do imóvel" class="gallery-image" />
+        </div>
+    </div>
 <div class="margin"></div>
 
 <app-footer></app-footer>

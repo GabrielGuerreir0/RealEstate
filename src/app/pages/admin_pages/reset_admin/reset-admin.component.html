@@ -6,18 +6,18 @@
     <div class="column_entries">
         <div class="email">
             <div class="text_email">Email</div>
-            <input type="text" class="input_email" placeholder="Digite seu email" />
+            <input type="text" class="input_email" placeholder="Digite seu email" [(ngModel)]="email" />
         </div>
         <div class="password">
             <div class="text_password">Nova senha</div>
-            <input type="password" class="input_password" placeholder="Digite sua senha" />
+            <input type="password" class="input_password" placeholder="Digite sua senha" [(ngModel)]="newPassword" />
         </div>
         <div class="passwordConfirm">
             <div class="text_confirm_password">Confirmar nova senha</div>
-            <input type="password" class="input_confirm_password" placeholder="Confirme sua senha" />
+            <input type="password" class="input_confirm_password" placeholder="Confirme sua senha" [(ngModel)]="passwordConfirm" />
         </div>
         <div class="button">
-            <button class="botao">Redefinir</button>
+            <button (click)="resetPassword()" class="botao">Redefinir</button>
         </div>       
     </div>
 </div>

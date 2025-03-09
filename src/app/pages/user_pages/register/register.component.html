@@ -6,26 +6,26 @@
     <div class="column_entries">
         <div class="name">
             <div class="text_name">Nome completo</div>
-            <input type="text" class="input_nome" placeholder="Digite seu nome" />
+            <input type="text" class="input_nome" placeholder="Digite seu nome" [(ngModel)]="name" />
         </div>
         <div class="telephone">
             <div class="text_email">Telefone</div>
-            <input type="text" class="input_telephone" placeholder="Digite seu telefone" />
+            <input type="text" class="input_telephone" placeholder="Digite seu telefone" [(ngModel)]="telephone" />
         </div>
         <div class="email">
             <div class="text_email">Email</div>
-            <input type="text" class="input_email" placeholder="Digite seu email" />
+            <input type="text" class="input_email" placeholder="Digite seu email" [(ngModel)]="email" />
         </div>
         <div class="password">
             <div class="text_password">Senha</div>
-            <input type="password" class="input_password" placeholder="Digite sua senha" />
+            <input type="password" class="input_password" placeholder="Digite sua senha" [(ngModel)]="password" />
         </div>
         <div class="passwordConfirm">
             <div class="text_confirm_password">Confirmar senha</div>
-            <input type="password" class="input_confirm_password" placeholder="Confirme sua senha" />
+            <input type="password" class="input_confirm_password" placeholder="Confirme sua senha" [(ngModel)]="passwordConfirm" />
         </div>
         <div class="button">
-            <button class="botao">Cadastrar-se</button>
+            <button (click)="Register()" class="botao">Cadastrar-se</button>
         </div>
         <div class="text">
             Já possui conta? <a (click)="GoToLogin()" class="enter">Entre aqui</a>

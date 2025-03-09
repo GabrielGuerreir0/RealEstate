@@ -1,4 +1,30 @@
 <app-nav-bar></app-nav-bar>
+
+<div class="login-admin">
+    <div class="text">
+        <h2>Login do administrador</h2>
+    </div>
+    <div class="column_entries">
+        <div class="email">
+            <div class="text_email">Email</div>
+            <input type="text" class="input_email" placeholder="Digite seu email" [(ngModel)]="email" />
+        </div>
+        <div class="password">
+            <div class="text_password">Senha</div>
+            <input type="password" class="input_password" placeholder="Digite sua senha" [(ngModel)]="password" />
+        </div>
+        <div class="button">
+            <button class="botao" (click)="login()">Entrar</button>
+        </div>                   
+        <div class="forget">
+            <div (click)="GoToReset()">Esqueci minha senha</div>
+        </div>     
+        <p class="message">{{ message }}</p>
+    </div>
+</div>
+
+
+<!--<app-nav-bar></app-nav-bar>
 <div class="login-admin">
     <div class="text">
         <h2>Login do administrador</h2>
@@ -18,9 +44,6 @@
                    
         <div class="forget">
             <div (click)="GoToReset()">Esqueci minha senha</div>
-        </div>
-       <!--<div class="text">
-            Não possui conta? <a href="/register" class="register">Cadastre-se</a>
-        </div>  -->       
+        </div>     
     </div>
-</div>
+</div> -->

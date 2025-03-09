@@ -104,7 +104,37 @@
     font-size: 22px;
     font-weight: bold;
     color: #1e40af;
-  }
+}
+
+.gallery {
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery h4 {
+    text-align: center;
+    font-size: 40px;
+    color:#1e3a8a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.gallery-image {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
 
 .margin {
     margin-top: 40px;

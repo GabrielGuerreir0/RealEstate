@@ -6,13 +6,17 @@
     </div> 
   
     <div class="first-box">
-         <div class="text-local">
+        <div class="text-local">
             <h3>Localização</h3>
         </div>
         <div class="column_entries">
+            <div class="code">
+                <div class="code_text">Código do imóvel imóvel</div>
+                <input type="text" class="input_image" [(ngModel)]="property.code" />
+            </div>
             <div class="type">
                 <div class="type-property">Tipo de Imóvel:</div>
-                <select class="input-type">
+                <select class="input-type" [(ngModel)]="property.type">
                     <option value="" disabled selected>Selecione um tipo</option>
                     <option value="casa">Casa</option>
                     <option value="apartamento">Apartamento</option>
@@ -24,21 +28,21 @@
             
             <div class="address">
                 <div class="text_address">Endereço</div>
-                <input type="text" class="input_address" placeholder="Digite rua e número" />
+                <input type="text" class="input_address" placeholder="Digite rua e número" [(ngModel)]="property.address" />
             </div>
             <div class="row">
                 <div class="neighborhood">
                     <div class="text_neighborhood">Bairro</div>
-                    <input type="text" class="input_neighborhood" placeholder="Digite o bairro" />
+                    <input type="text" class="input_neighborhood" placeholder="Digite o bairro" [(ngModel)]="property.neighborhood" />
                 </div>
                 <div class="city">
                     <div class="text_city">Cidade</div>
-                    <input type="text" class="input_city" placeholder="Digite o município" />
+                    <input type="text" class="input_city" placeholder="Digite o município" [(ngModel)]="property.city" />
                 </div>
             </div>
             <div class="state">
                 <div class="select-state">Estado da Vertice Lux:</div>
-                <select class="input-type">
+                <select class="input-type" [(ngModel)]="property.state">
                     <option value="" disabled selected>Selecione o estado</option>
                     <option value="ceara">Ceará</option>      
                     <option value="paraiba">Paraíba</option>
@@ -52,81 +56,86 @@
             <div class="first-row">
                 <div class="area">
                     <div class="number_area">Área total (m²)</div>
-                    <input type="number" class="input_area" placeholder="" />
+                    <input type="number" class="input_area" [(ngModel)]="property.area" />
                 </div>
                 <div class="dormitory">
                     <div class="number_dormitory">Quantos dormitórios?</div>
-                    <input type="number" class="input_dormitory" placeholder="" />
+                    <input type="number" class="input_dormitory" [(ngModel)]="property.dormitories" />
                 </div>
+            </div>
+            <div class="second-row">
+                <div class="suite">
+                    <div class="number_suite">Quantas suítes?</div>
+                    <input type="number" class="input_suite" [(ngModel)]="property.suites" />
                 </div>
-                <div class="second-row">
-                    <div class="suite">
-                        <div class="number_suite">Quantas suítes?</div>
-                        <input type="number" class="input_suite" placeholder="" />
-                    </div>
-                    <div class="garage">
-                        <div class="number_garage">Vagas na garagem?</div>
-                        <input type="number" class="input_garage" placeholder="" />
-                    </div>
-             </div>
-             <div class="third-row">
+                <div class="garage">
+                    <div class="number_garage">Vagas na garagem?</div>
+                    <input type="number" class="input_garage" [(ngModel)]="property.garage" />
+                </div>
+            </div>
+            <div class="third-row">
                 <div class="bathroom">
                     <div class="number_bathroom">Quantos banheiros?</div>
-                    <input type="number" class="input_bathroom" placeholder="" />
+                    <input type="number" class="input_bathroom" [(ngModel)]="property.bathrooms" />
                 </div>
                 <div class="kitchen">
                     <div class="number_kitchen">Quantas cozinhas?</div>
-                    <input type="number" class="input_kitchen" placeholder="" />
+                    <input type="number" class="input_kitchen" [(ngModel)]="property.kitchens" />
                 </div>
+            </div>
+            <div class="fourth-row">
+                <div class="leisure">
+                    <div class="number_leisure">Quantas áreas de lazer?</div>
+                    <input type="number" class="input_leisure" [(ngModel)]="property.leisureAreas" />
                 </div>
-                <div class="fourth-row">
-                    <div class="leisure">
-                        <div class="number_leisure">Quantas áreas de lazer?</div>
-                        <input type="number" class="input_leisure" placeholder="" />
-                    </div>
-                    <div class="person">
-                        <div class="number_person">Quantas pessoas acomoda?</div>
-                        <input type="number" class="input_person" placeholder="" />
-                    </div>   
-             </div>
-             <div class="text-local">
+                <div class="person">
+                    <div class="number_person">Quantas pessoas acomoda?</div>
+                    <input type="number" class="input_person" [(ngModel)]="property.capacity" />
+                </div>   
+            </div>
+            <div class="text-local">
                 <h3>Valores financeiros</h3>
-             </div>
-             <div class="first-row">
+            </div>
+            <div class="first-row">
                 <div class="transaction">
                     <div class="select-state">Tipo de transação:</div>
-                    <select class="input-type">
+                    <select class="input-type" [(ngModel)]="property.transactionType">
                         <option value="" disabled selected>Selecione</option>
                         <option value="venda">Venda</option>      
                         <option value="locação">Locação</option>
                         <option value="ambos">Ambos</option>
                     </select>
                 </div>
-                  <div class="tax">
+                <div class="tax">
                     <div class="number_tax">Valor do IPTU (R$)</div>
-                    <input type="number" class="input_tax" placeholder="" />
+                    <input type="number" class="input_tax" [(ngModel)]="property.iptu" />
                 </div>
-                </div>
-                <div class="second-row">
+            </div>
+            <div class="second-row">
                 <div class="rent">
                     <div class="number_rent">Preço da locação (R$)</div>
-                    <input type="number" class="input_rent" placeholder="" />
+                    <input type="number" class="input_rent" [(ngModel)]="property.rentPrice" />
                 </div>    
                 <div class="sale">
-                        <div class="number_sale">Preço da venda (R$)</div>
-                        <input type="number" class="input_sale" placeholder="" />
-                    </div>
-             </div>
+                    <div class="number_sale">Preço da venda (R$)</div>
+                    <input type="number" class="input_sale" [(ngModel)]="property.salePrice" />
+                </div>
+            </div>
 
             <div class="text-local">
                 <h3>Descrição</h3>
             </div>
-             <div class="description">
+            <div class="description">
                 <div class="text_description">Faça uma descrição geral do imóvel</div>
-                <input type="text" class="input_description" placeholder="" />
+                <input type="text" class="input_description" [(ngModel)]="property.description" />
+            </div>
+
+            <div class="image">
+                <div class="image_text">URL da imagem do imóvel</div>
+                <input type="text" class="input_image" [(ngModel)]="property.image" />
             </div>
             <div class="button">
-                <button class="botao">Cadastrar imóvel</button>
+                <button (click)="registerProperty()" class="botao">Cadastrar imóvel</button>
             </div>      
         </div>
     </div>

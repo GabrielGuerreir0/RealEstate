@@ -6,14 +6,14 @@
     <div class="column_entries">
         <div class="email">
             <div class="text_email">Email</div>
-            <input type="text" class="input_email" placeholder="Digite seu email" />
+            <input type="text" class="input_email" placeholder="Digite seu email" [(ngModel)]="email" />
         </div>
         <div class="password">
             <div class="text_password">Senha</div>
-            <input type="password" class="input_password" placeholder="Digite sua senha" />
+            <input type="password" class="input_password" placeholder="Digite sua senha" [(ngModel)]="password" />
         </div>
         <div class="button">
-            <button class="botao"(click)="GoToList()">Entrar</button>
+            <button class="botao"(click)="login()">Entrar</button>
         </div>
         <div class="forget">
             <a (click)="GoToReset()">Esqueci minha senha</a>
