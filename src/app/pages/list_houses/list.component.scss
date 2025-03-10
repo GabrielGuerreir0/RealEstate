@@ -8,74 +8,74 @@
   align-items: center;
   font-family: Arial, sans-serif;
   background-color: #1e3a8a;
-  padding : 10px;
-  position : relative;
+  padding: 10px;
+  position: relative;
 }
 
-.exclusive .image  {
-    position : relative;
-    top : -70px;
-    margin-top : 10px;
-    padding-left : 5%;
+.exclusive .image {
+  position: relative;
+  top: -70px;
+  margin-top: 10px;
+  padding-left: 5%;
 }
 
 .exclusive .text {
-    display: flex;
-    flex-direction: column;
-    margin : 2%;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
 }
 
 .exclusive .text .title {
-    color : white;
-    font-size: 55px;
-    font-weight: medium;
+  color: white;
+  font-size: 55px;
+  font-weight: medium;
 }
 
 .exclusive .text .introduction {
-    margin-top: 4px;
-    color : white;
-    font-size: 35px;
-    font-weight: medium;
+  margin-top: 4px;
+  color: white;
+  font-size: 35px;
+  font-weight: medium;
 }
 
 .text-card {
-    margin-top: 40px;
-    color: #1e3a8a; 
-    font-weight: bold; 
-    font-size: 3.0rem; 
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 10px; 
-    text-align: center;
+  margin-top: 40px;
+  color: #1e3a8a;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .customer {
-font-weight: normal; 
-font-family: Arial, Helvetica, sans-serif;
-font-size: 1.2rem; 
-margin-bottom: 10px; 
-text-align: center;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .cards-container {
-    max-width: 1700px; 
-    padding: 0 20px;
-    padding-left: 2%;
-    align-items: center;
-    justify-content: center;
+  max-width: 1700px;
+  padding: 0 20px;
+  padding-left: 2%;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards-container .cards {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
 }
 
 .cards-container .cards app-property-card {
-    flex: 1 1 calc(25% - 18px); 
-    box-sizing: border-box;
+  flex: 1 1 calc(25% - 18px);
+  box-sizing: border-box;
 }
 
 //Só para afastar enquanto o footer não está fixo lá embaixo
 .margin {
-    margin-top: 150px;
+  margin-top: 150px;
 }

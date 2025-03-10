@@ -25,7 +25,7 @@
 
 <div class="cards-container">
     <div class="cards">
-    <!--    <app-property-card *ngFor="let property of properties"
+        <!--    <app-property-card *ngFor="let property of properties"
                            [imageUrl]="property.imageUrl"
                            [type]="property.type"
                            [isNew]="false"
@@ -39,22 +39,23 @@
                            [functionality]="property.transactionType"
                            (click)="navigateToDetails(property.propertyCode)">
         </app-property-card>
-      </div>  -->   
+      </div>  -->
 
-  <div class="cards">
-        <app-property-card [imageUrl]="'assets/images/cumbuco.png'" [type]="'Casa'" [isNew]="false" [title]="'Meireles, Fortaleza-CE'" [area]="253" [bedrooms]="4" [suites]="1" [parking]="3" [price]="3800000" [propertyCode]="96216" [functionality]="'Compra'" (click)="navigateToDetails(96216)"></app-property-card>
-        <app-property-card [imageUrl]="'assets/images/maracanau.png'" [type]="'Casa'" [isNew]="false" [title]="'Jardim da Serra, Maracanaú-CE'" [area]="200" [bedrooms]="6" [suites]="1" [parking]="3" [price]="4200000" [propertyCode]="96217" [functionality]="'Compra'" (click)="navigateToDetails(96217)"></app-property-card>
-        <app-property-card [imageUrl]="'assets/images/eusebio.jpg'" [type]="'Casa'" [isNew]="false" [title]="'Coité, Eusébio-CE'" [area]="200" [bedrooms]="5" [suites]="1" [parking]="8" [price]="8900" [propertyCode]="96218" [functionality]="'Locação'" (click)="navigateToDetails(96218)"></app-property-card>
-        <app-property-card [imageUrl]="'assets/images/guaramiranga.png'" [type]="'Casa'" [isNew]="false" [title]="'Serra dos Maciços, Guaramiranga-CE'" [area]="300" [bedrooms]="6" [suites]="3" [parking]="16" [price]="12200" [propertyCode]="96219" [functionality]="'Locação'" (click)="navigateToDetails(96219)"></app-property-card>
-        <app-property-card [imageUrl]="'assets/images/juazeiro.png'" [type]="'Casa'" [isNew]="false" [title]="'Lagoa Seca, Juazeiro do Norte-CE'" [area]="200" [bedrooms]="6" [suites]="1" [parking]="3" [price]="405000" [propertyCode]="96220" [functionality]="'Compra'" (click)="navigateToDetails(96220)"></app-property-card>
-        <app-property-card [imageUrl]="'assets/images/cascavel.png'" [type]="'Casa'" [isNew]="false" [title]="'São Cristóvão, Cascavel-CE'" [area]="200" [bedrooms]="6" [suites]="1" [parking]="3" [price]="2900000" [propertyCode]="96221" [functionality]="'Compra'" (click)="navigateToDetails(96221)"></app-property-card>
-        <app-property-card [imageUrl]="'assets/images/caninde.png'" [type]="'Casa'" [isNew]="false" [title]="'Bela Vista, Canindé-CE'" [area]="200" [bedrooms]="6" [suites]="1" [parking]="9" [price]="8400" [propertyCode]="96222" [functionality]="'Locação'" (click)="navigateToDetails(96222)"></app-property-card>
-        <app-property-card [imageUrl]="'assets/images/jericoacoara.png'" [type]="'Casa de praia'" [isNew]="false" [title]="'Lagoa Azul, Jijoca de Jericoacoara-CE'" [area]="180" [bedrooms]="4" [suites]="2" [parking]="6" [price]="5500" [propertyCode]="96223" [functionality]="'Locação'" (click)="navigateToDetails(96223)"></app-property-card>
-        <app-property-card [imageUrl]="'assets/images/exclusive.png'" [type]="'Casa de praia'" [isNew]="false" [title]="'Canoa Quebrada, Aracati-CE'" [area]="150" [bedrooms]="4" [suites]="1" [parking]="4" [price]="6000" [propertyCode]="96224" [functionality]="'Locação'"(click)="navigateToDetails(96224)"></app-property-card>
-        <app-property-card [imageUrl]="'assets/images/joao_pessoa.jpg'" [type]="'Apartamento'" [isNew]="false" [title]="'Altiplano, João Pessoa-PB'" [area]="260" [bedrooms]="30" [suites]="15" [parking]="25" [price]="7500" [propertyCode]="96225" [functionality]="'Locação'" (click)="navigateToDetails(96225)"></app-property-card>
-        <app-property-card [imageUrl]="'assets/images/natal.jpg'" [type]="'Casa'" [isNew]="false" [title]="'Ponta Negra, Natal-RN'" [area]="200" [bedrooms]="4" [suites]="2" [parking]="9" [price]="6000" [propertyCode]="96226" [functionality]="'Locação'" (click)="navigateToDetails(96226)"></app-property-card>
-        <app-property-card [imageUrl]="'assets/images/recife.jpg'" [type]="'Apartamento'" [isNew]="false" [title]="'Boa Viagem, Recife-PE'" [area]="340" [bedrooms]="80" [suites]="40" [parking]="75" [price]="12000" [propertyCode]="96227" [functionality]="'Compra'" (click)="navigateToDetails(96227)"></app-property-card>
-    </div>  
+        <div class="cards">
+            <app-property-card [imageUrl]="'assets/images/cumbuco.png'" [type]="'Casa'" [isNew]="false" [title]="'Meireles, Fortaleza-CE'" [area]="253" [bedrooms]="4" [suites]="1" [parking]="3" [price]="3800000" [propertyCode]="96216" [functionality]="'Compra'" (click)="navigateToDetails(96216)"></app-property-card>
+            <app-property-card [imageUrl]="'assets/images/maracanau.png'" [type]="'Casa'" [isNew]="false" [title]="'Jardim da Serra, Maracanaú-CE'" [area]="200" [bedrooms]="6" [suites]="1" [parking]="3" [price]="4200000" [propertyCode]="96217" [functionality]="'Compra'" (click)="navigateToDetails(96217)"></app-property-card>
+            <app-property-card [imageUrl]="'assets/images/eusebio.jpg'" [type]="'Casa'" [isNew]="false" [title]="'Coité, Eusébio-CE'" [area]="200" [bedrooms]="5" [suites]="1" [parking]="8" [price]="8900" [propertyCode]="96218" [functionality]="'Locação'" (click)="navigateToDetails(96218)"></app-property-card>
+            <app-property-card [imageUrl]="'assets/images/guaramiranga.png'" [type]="'Casa'" [isNew]="false" [title]="'Serra dos Maciços, Guaramiranga-CE'" [area]="300" [bedrooms]="6" [suites]="3" [parking]="16" [price]="12200" [propertyCode]="96219" [functionality]="'Locação'" (click)="navigateToDetails(96219)"></app-property-card>
+            <app-property-card [imageUrl]="'assets/images/juazeiro.png'" [type]="'Casa'" [isNew]="false" [title]="'Lagoa Seca, Juazeiro do Norte-CE'" [area]="200" [bedrooms]="6" [suites]="1" [parking]="3" [price]="405000" [propertyCode]="96220" [functionality]="'Compra'" (click)="navigateToDetails(96220)"></app-property-card>
+            <app-property-card [imageUrl]="'assets/images/cascavel.png'" [type]="'Casa'" [isNew]="false" [title]="'São Cristóvão, Cascavel-CE'" [area]="200" [bedrooms]="6" [suites]="1" [parking]="3" [price]="2900000" [propertyCode]="96221" [functionality]="'Compra'" (click)="navigateToDetails(96221)"></app-property-card>
+            <app-property-card [imageUrl]="'assets/images/caninde.png'" [type]="'Casa'" [isNew]="false" [title]="'Bela Vista, Canindé-CE'" [area]="200" [bedrooms]="6" [suites]="1" [parking]="9" [price]="8400" [propertyCode]="96222" [functionality]="'Locação'" (click)="navigateToDetails(96222)"></app-property-card>
+            <app-property-card [imageUrl]="'assets/images/jericoacoara.png'" [type]="'Casa de praia'" [isNew]="false" [title]="'Lagoa Azul, Jijoca de Jericoacoara-CE'" [area]="180" [bedrooms]="4" [suites]="2" [parking]="6" [price]="5500" [propertyCode]="96223" [functionality]="'Locação'" (click)="navigateToDetails(96223)"></app-property-card>
+            <app-property-card [imageUrl]="'assets/images/exclusive.png'" [type]="'Casa de praia'" [isNew]="false" [title]="'Canoa Quebrada, Aracati-CE'" [area]="150" [bedrooms]="4" [suites]="1" [parking]="4" [price]="6000" [propertyCode]="96224" [functionality]="'Locação'" (click)="navigateToDetails(96224)"></app-property-card>
+            <app-property-card [imageUrl]="'assets/images/joao_pessoa.jpg'" [type]="'Apartamento'" [isNew]="false" [title]="'Altiplano, João Pessoa-PB'" [area]="260" [bedrooms]="30" [suites]="15" [parking]="25" [price]="7500" [propertyCode]="96225" [functionality]="'Locação'" (click)="navigateToDetails(96225)"></app-property-card>
+            <app-property-card [imageUrl]="'assets/images/natal.jpg'" [type]="'Casa'" [isNew]="false" [title]="'Ponta Negra, Natal-RN'" [area]="200" [bedrooms]="4" [suites]="2" [parking]="9" [price]="6000" [propertyCode]="96226" [functionality]="'Locação'" (click)="navigateToDetails(96226)"></app-property-card>
+            <app-property-card [imageUrl]="'assets/images/recife.jpg'" [type]="'Apartamento'" [isNew]="false" [title]="'Boa Viagem, Recife-PE'" [area]="340" [bedrooms]="80" [suites]="40" [parking]="75" [price]="12000" [propertyCode]="96227" [functionality]="'Compra'" (click)="navigateToDetails(96227)"></app-property-card>
+        </div>
+    </div>
 </div>
 <div class="margin"></div>
 <app-footer></app-footer>
